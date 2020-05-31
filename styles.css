@@ -47,7 +47,7 @@ body{
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background:   linear-gradient(to bottom right,rgb(255, 253, 253) calc(0%), transparent 0%, rgb(255, 253, 253) calc(50%),transparent calc(50%), rgb(255, 255, 255) calc(50%),rgba(0,0,0,0) calc(50%), rgba(0,0,0,0) 100%)
+  background:   linear-gradient(to bottom right,rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 50%, rgb(255, 255, 255) calc(50%),rgba(0,0,0,0) calc(50%), rgba(0,0,0,0) 100%)
 }
 
 .container:hover .overlay {
