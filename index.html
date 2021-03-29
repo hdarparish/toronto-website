@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="loadImages()">
     <p class='header'>The City of <strong>Toronto</strong></p>
     <p class="subHeader">Historical Sites & <strong>More</strong></p>
     <div class="masonry">
@@ -21,52 +21,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <img class="item" src="assets/old-city-hall.jpg" alt="Toronto old city hall">
-            <div class="overlay">
-                <div class="text">
-                    <p><b>Old City Hall</b></p>
-                    <p>The Clock Tower</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <img class="item" src="assets/cn-tower.jpg" alt="Toronto CN tower">
-            <div class="overlay">
-                <div class="text">
-                    <p><b>The CN Tower</b></p>
-                    <p>One of the Worlds<br> Tallest Towers</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <img class="item" src="assets/rom.jpg" alt="Toronto Muesuem">
-            <div class="overlay">
-                <div class="text">
-                    <p><b>Royal Ontario Muesuem</b></p>
-                    <p>Most Visited Muesuem <br> in Canada</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <img class="item" src="assets/rogers-center.jpg" alt="Rogers Center">
-            <div class="overlay">
-                <div class="text">
-                    <p><b>The Rogers Center</b></p>
-                    <p>Toronto's Iconic <br> Skydome</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <img class="item" src="assets/new-city-hall.jpg" alt="Toronto New city hall">
-            <div class="overlay">
-                <div class="text">
-                    <p><b>Toronto City Hall</b></p>
-                    <p>A Brutalist Architecture <br> Masterpiece</p>
-                </div>
-            </div>
-        </div>
     </div>
+    <div class="load-image"> <button onclick="loadImages()">Load More</button></div>
+
     <footer>
         <ul class="social-icons">
             <li><a href="http://www.facebook.com"><img src='assets/facebook.png' /></a></li>
@@ -75,6 +32,7 @@
             <li><a href="http://www.instagram.com"><img src='assets/instagram.png' /></a></li>
         </ul>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
   background-color: #d5d5d5;
-  font-family: 'Open Sans',serif;
-  font:black ;
+  font-family: "Open Sans", serif;
+  font: black;
 }
 /*For the main title*/
-.header{
+.header {
   margin: 40px auto;
   width: 1100px;
   font-size: 60px;
 }
 /*For the secondary title*/
-.subHeader{
+.subHeader {
   margin: 40px auto;
   width: 1100px;
   font-size: 40px;
   color: dimgray;
 }
-.container{
+.container {
   position: relative;
   text-align: left;
 }
- /* Masonry container */
+/* Masonry container */
 .masonry {
   column-count: 3;
   column-gap: 1em;
@@ -43,11 +43,18 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  height:100%;
+  height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .3s ease;
-  background:   linear-gradient(to bottom right,rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 50%, rgb(255, 255, 255) calc(50%),rgba(0,0,0,0) calc(50%), rgba(0,0,0,0) 100%)
+  transition: 0.3s ease;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgb(255, 255, 255) calc(50%),
+    rgba(0, 0, 0, 0) calc(50%),
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .container:hover .overlay {
@@ -65,20 +72,41 @@ body{
   width: 1100px;
   margin: 40px auto;
   padding: 0px;
-  }  
-.social-icons li { 
-  display:inline-block;
-  list-style-type:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  }
-.social-icons li a { 
-  border-bottom: none;
-  }
-.social-icons li img {
-  width:30px;
-  height:30px;
 }
-.social-icons a img:hover{
+.social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.social-icons li a {
+  border-bottom: none;
+}
+.social-icons li img {
+  width: 30px;
+  height: 30px;
+}
+.social-icons a img:hover {
   opacity: 0.3;
+}
+
+.load-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load-image button {
+  padding: 1rem;
+  border: none;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  outline: none;
+}
+.load-image button:hover {
+  opacity: 0.6;
+
+  background: rgb(105, 104, 104);
+  cursor: pointer;
+  color: #eee;
 }
